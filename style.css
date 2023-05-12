@@ -29,7 +29,7 @@ body {
     transition: margin-bottom 0.1s;
   }
   #grass {
-    font-size: min(9vw, 9vh);
+    font-size: min(15vw, 15vh);
     height: 65vh;
     width: 35vw;
     border: solid;
@@ -50,7 +50,7 @@ body {
   #grass:hover:active {
     height: 60vh;
     width: 30vw;
-    font-size: min(8vh, 8vw);
+    font-size: min(13vh, 13vw);
     margin-left: 4.5vw;
     margin-right: 4.5vw;
   }
