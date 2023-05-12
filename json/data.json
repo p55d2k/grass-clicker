@@ -1,0 +1,98 @@
+{
+    "antautoclicker": {
+        "name": "Ant's Autoclicker",
+        "descrip": "An ant decides to help you. +0.5 clicks per second.",
+        "price": 30,
+        "multiplier": 1.4,
+        "unlocked": true,
+        "id": 1
+    },
+    "moreclicker": {
+        "name": "More Clicker",
+        "descrip": "Wow you can click more now. +1 clicks per second.",
+        "price": 100,
+        "multiplier": 1.5,
+        "unlocked": true,
+        "id": 2
+    },
+    "humanautoclicker": {
+        "name": "Human's Autoclicker",
+        "descrip": "How did you get a human to help you? +3 clicks per second.",
+        "price": 250,
+        "multiplier": 1.55,
+        "unlocked": true,
+        "id": 3
+    },
+    "efficientautos": {
+        "name": "Efficient Autos",
+        "descrip": "Magically, your autoclickers 50% more efficient.",
+        "price": 500,
+        "multiplier": 1.65,
+        "unlocked": false,
+        "id": 4
+    },
+    "aliensautoclicker": {
+        "name": "Aliens",
+        "descrip": "You discover aliens and you enslave them. +10 clicks per second.",
+        "price": 750,
+        "multiplier": 1.7,
+        "unlocked": false,
+        "id": 5
+    },
+    "efficientclicks": {
+        "name": "Efficient Clicks",
+        "descrip": "For some reason, your clicks are 50% more efficient.",
+        "price": 1000,
+        "multiplier": 1.8,
+        "unlocked": false,
+        "id": 6
+    },
+    "everythingbetter": {
+        "name": "Everything Better",
+        "descrip": "How did everything get twice as efficient???",
+        "price": 5000,
+        "multiplier": 1.9,
+        "unlocked": false,
+        "id": 7
+    },
+    "ai": {
+        "name": "AI",
+        "descrip": "You create an AI to help you. +50 clicks per second.",
+        "price": 7800,
+        "multiplier": 1.95,
+        "unlocked": false,
+        "id": 8
+    },
+    "everythingevenbetter": {
+        "name": "Everything Even Better",
+        "descrip": "Grass likes you now - everything is 5 times more efficient!",
+        "price": 10000,
+        "multiplier": 2,
+        "unlocked": false,
+        "id": 9
+    },
+    "mostefficient": {
+        "name": "Most Efficient",
+        "descrip": "Everything is 10 times more efficient.",
+        "price": 50000,
+        "multiplier": 2.1,
+        "unlocked": false,
+        "id": 10
+    },
+    "higherlife": {
+        "name": "Higher Life",
+        "descrip": "You discover a higher life form. +100 clicks per second.",
+        "price": 80000,
+        "multiplier": 2.25,
+        "unlocked": false,
+        "id": 11
+    },
+    "god": {
+        "name": "God",
+        "descrip": "You turn into a god. +5000 clicks per second.",
+        "price": 100000,
+        "multiplier": 2.5,
+        "unlocked": false,
+        "id": 12
+    }
+}

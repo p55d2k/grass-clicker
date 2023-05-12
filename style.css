@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif !important;
@@ -65,7 +66,7 @@ body {
     margin-bottom: 7.5px;
     padding: 15px;
     width: 30vw;
-    font-family: Tahoma;
+    font-family: 'Open Sans', sans-serif;
     font-size: min(2.7vh, 2.2vw);
   }
   #container {
@@ -122,7 +123,8 @@ body {
     display: flex;
     justify-content: right;
     opacity: 0.4;
-    font-size: 30px;
+    margin-top: 10px;
+    font-size: 24px;
   }
   .price {
     color: red;
@@ -130,7 +132,7 @@ body {
   
   @media screen and (max-width: 1200px) {
     span.amountofupgrades {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
   

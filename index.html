@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Grass Clicker</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2hvdy1ncmFzcy13b3Jrcy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ==" type="image/x-icon">
     </head>
     <body>
         <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2hvdy1ncmFzcy13b3Jrcy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ==">
@@ -17,17 +18,7 @@
             <div onmousedown="grassclick()" id="grass">GRASS <br> (click me!)</div>
             <div id="buah">
                 <p id="error">You don't have enough grass!</p>
-                <div class="container">
-                    <button onmousedown="antautoclick()">Ant's autoclicker: <br>+0.5 clicks per second, costs <span class="price" id="antautoclickerprice">30</span> grass.<span id="antautodesc" class="amountofupgrades">Amount: 0</span></button>
-                    <button onmousedown="moreclick()">Moreclicker: <br>+1 grass per click, costs <span class="price" id="moreclickerprice">100</span> grass.<span id="moredesc" class="amountofupgrades">Amount: 0</span></button>
-                    <button onmousedown="humanautoclick()">Human's autoclicker: <br>+5 clicks per second, costs <span class="price" id="humanautoclickerprice">150</span> grass.<span id="humanautodesc" class="amountofupgrades">Amount: 0</span></button>
-                    <button onmousedown="effauto()">Efficient autos: <br>Autoclickers gain additional 100% of normal efficiency. Costs <span class="price" id="efficiantautosprice">500</span> grass.<span id="efauto" class="amountofupgrades">Amount: 0</span></button>
-                    <button onmousedown="effclick()">Efficient clicks: <br>Clicks give additional 100% of normal efficiency. Costs <span class="price" id="efficientclicksprice">1000</span> grass.<span id="efclick" class="amountofupgrades">Amount: 0</span></button>
-                    <button onmousedown="geneff()">Everything better: <br>Everything is 3 times more efficient. Costs <span class="price" id="everythingbetterprice">5000</span> grass.<span id="geneff" class="amountofupgrades">Amount: 0</span></button>
-                    <button onmousedown="alienautoclick()">Alien's Autoclicker: <br>+300 clicks per second, costs <span class="price" id="alienautoclickerprice">7500</span> grass.<span id="alienautodesc" class="amountofupgrades">Amount: 0</span></button>
-                    <button onmousedown="teff()">Everything even better: <br>Everything is 10 times more efficient. Costs <span class="price" id="everythingevenbetterprice">15000</span> grass.<span id="teff" class="amountofupgrades">Amount: 0</span></button>
-                    <button onmousedown="effteff()">Most efficient: <br>Everything is 1000 times more efficient. Costs <span class="price" id="mostefficientprice">1000000</span> grass.<span id="effteff" class="amountofupgrades">Amount: 0</span></button>
-                </div>
+                <div class="container" id="inject"></div>
             </div>
         </div>
         <footer style="padding-top: 40px;">
@@ -37,5 +28,6 @@
             <p>Work: ZK (P55D2K)</p>
         </footer>
     </body>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>'
+    <script src="js/inject.js"></script>
 </html>
