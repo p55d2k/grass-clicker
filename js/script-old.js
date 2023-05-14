@@ -1,7 +1,6 @@
 var root = document.documentElement;
 
 var clickamt = 1;
-var efauto = 1;
 var efclick = 1;
 
 var antautoclickers = 0;

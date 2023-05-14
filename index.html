@@ -13,6 +13,15 @@
         <h1>GRASS CLICKER 2.4</h1>
         <p>Grasscount: <span id="grasscount">0</span></p>
         <p id="persecond" style="margin-bottom: 20px;">Per second: <span id="persecondcount">0</span></p>
+        <div class="toprightcorner">
+            <div class="info">Control Panel <br></div>
+            <div class="btns">
+                <button onclick="save()">Save</button>
+                <button onclick="exportf()">Export</button>
+                <button onclick="uploadf()">Upload</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
         <br>
         <div id="container">
             <div onmousedown="grassclick()" id="grass">GRASS</div>
@@ -28,6 +37,5 @@
             <p>Work: ZK (P55D2K)</p>
         </footer>
     </body>
-    <script src="js/script.js"></script>'
-    <script src="js/inject.js"></script>
+    <script src="js/script.js"></script>
 </html>
