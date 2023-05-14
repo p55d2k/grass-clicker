@@ -145,6 +145,8 @@ function addgrassandcheck() {
     if (grass == Infinity) {
         alert("You have reached Infinity grass! You win!");
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    } else if (grass == NaN) {
+        reset();
     } checkunlocks();
 }
 
@@ -189,18 +191,6 @@ getdata().then(data => {
         unlocked = JSON.parse(localStorage.getItem("unlocked"));
         grasscount.innerText = grass;
         persecond.innerText = grasspersecond;
-        for (let i = 0; i < prices.length; i++) {
-            amtelements[i].innerText = amt[i];
-            priceelements[i].innerText = prices[i];
-            if (unlocked[i] == true) {
-                buttons[i].classList.add("unlockedtrue");
-                buttons[i].classList.remove("unlockedfalse");
-            } else {
-                buttons[i].classList.add("unlockedfalse");
-                buttons[i].classList.remove("unlockedtrue");
-            }
-        }
-        resetinterval();
     }
 });
 
@@ -286,3 +276,7 @@ function uploadf() {
     input.click();
     checkunlocks();
 }
+
+// go to https://skalman.github.io/UglifyJS-online/
+// then https://javascriptobfuscator.com/Javascript-Obfuscator.aspx
+// and https://javascript-minifier.com
