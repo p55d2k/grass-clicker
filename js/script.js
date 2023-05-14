@@ -276,7 +276,3 @@ function uploadf() {
     input.click();
     checkunlocks();
 }
-
-// go to https://skalman.github.io/UglifyJS-online/
-// then https://javascriptobfuscator.com/Javascript-Obfuscator.aspx
-// and https://javascript-minifier.com
