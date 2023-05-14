@@ -3,91 +3,91 @@
         "name": "Ant's Autoclicker",
         "descrip": "An ant decides to help you. +0.5 clicks per second.",
         "price": 30,
-        "multiplier": 1.15,
+        "multiplier": 2.1,
         "id": 1
     },
     "moreclicker": {
         "name": "More Clicker",
         "descrip": "Wow you can click more now. +1 grass per click.",
         "price": 100,
-        "multiplier": 1.2,
+        "multiplier": 2.2,
         "id": 2
     },
     "humanautoclicker": {
         "name": "Human's Autoclicker",
         "descrip": "How did you get a human to help you? +3 clicks per second.",
         "price": 250,
-        "multiplier": 1.3,
+        "multiplier": 2.3,
         "id": 3
     },
     "efficientautos": {
         "name": "Efficient Autos",
         "descrip": "Magically, your autoclickers 50% more efficient.",
         "price": 500,
-        "multiplier": 1.375,
+        "multiplier": 2.45,
         "id": 4
     },
     "aliensautoclicker": {
         "name": "Aliens",
         "descrip": "You discover aliens and you enslave them. +10 clicks per second.",
         "price": 750,
-        "multiplier": 1.4,
+        "multiplier": 2.5,
         "id": 5
     },
     "efficientclicks": {
         "name": "Efficient Clicks",
         "descrip": "For some reason, your clicks are 50% more efficient.",
         "price": 1000,
-        "multiplier": 1.45,
+        "multiplier": 2.55,
         "id": 6
     },
     "everythingbetter": {
         "name": "Everything Better",
         "descrip": "How did everything get twice as efficient???",
         "price": 5000,
-        "multiplier": 1.55,
+        "multiplier": 2.6,
         "id": 7
     },
     "ai": {
         "name": "AI",
         "descrip": "You create an AI to help you. +50 clicks per second.",
         "price": 7800,
-        "multiplier": 1.6,
+        "multiplier": 2.75,
         "id": 8
     },
     "everythingevenbetter": {
         "name": "Everything Even Better",
         "descrip": "Grass likes you now - everything is 5 times more efficient!",
         "price": 10000,
-        "multiplier": 1.75,
+        "multiplier": 2.8,
         "id": 9
     },
     "mostefficient": {
         "name": "Most Efficient",
         "descrip": "Everything is 10 times more efficient.",
         "price": 50000,
-        "multiplier": 1.85,
+        "multiplier": 2.9,
         "id": 10
     },
     "higherlife": {
         "name": "Higher Life",
         "descrip": "You discover a higher life form. +150 clicks per second.",
         "price": 80000,
-        "multiplier": 1.925,
+        "multiplier": 3.0,
         "id": 11
     },
     "god": {
         "name": "God",
         "descrip": "You turn into a god. +500 clicks per second.",
         "price": 100000,
-        "multiplier": 2,
+        "multiplier": 3.2,
         "id": 12
     },
     "moregod": {
         "name": "More God",
         "descrip": "You become more godly. +1000 clicks per second <i>and</i> +1000 grass per click!!!",
         "price": 500000,
-        "multiplier": 2.15,
+        "multiplier": 3.5,
         "id": 13
     }
 }
