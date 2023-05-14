@@ -235,7 +235,7 @@ function exportf() {
         unlocked: unlocked
     }
     exportdata = JSON.stringify(exportdata);
-    exportdata = btoa(exportdata);
+    exportdata = btoa(exportdata).slice(-2);
     let link = document.createElement('a');
     link.download = 'grassclickerdata.txt';
     link.href = 'data:text/plain;charset=utf-8,' + exportdata;
@@ -251,7 +251,7 @@ function uploadf() {
         reader.readAsText(file, 'UTF-8');
         reader.onload = readerEvent => {
             let content = readerEvent.target.result;
-            content = atob(content);
+            content = atob(content) + '==';
             content = JSON.parse(content);
             grass = content.grass;
             grasspersecond = content.grasspersecond;
