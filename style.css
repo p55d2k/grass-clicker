@@ -96,13 +96,13 @@ body {
   #buah:nth-child(0) {
     margin-top: 0;
   }
-  .unlockedtrue {
+  .unlocked {
     background-color: rgba(255, 255, 255, 0.8);
     color: rgba(0, 0, 0, 0.8);
     opacity: 1;
     cursor: pointer;
   }
-  .unlockedfalse {
+  .locked {
     background-color: rgba(255, 255, 255, 0.5);
     color: rgba(0, 0, 0, 0.5);
     opacity: 0.5;
@@ -139,14 +139,16 @@ body {
     align-items: center;
     height: 100%;
   }
-  .toprightcorner button {
+  .toprightcorner .btns div {
     margin: 5px;
     width: 6vw;
     border: none;
     border-radius: 25%;
     opacity: 1;
+    border: solid;
+    padding: 2.5px;
   }
-  .toprightcorner button:hover {
+  .toprightcorner .btns div:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;

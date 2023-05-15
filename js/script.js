@@ -129,13 +129,24 @@ function checkunlocks() {
     for (let i = 0; i < prices.length; i++) {
         if (grass >= prices[i]) {
             unlocked[i] = true;
-            buttons[i].classList.add("unlockedtrue");
-            buttons[i].classList.remove("unlockedfalse");
         } else {
             unlocked[i] = false;
-            buttons[i].classList.add("unlockedfalse");
-            buttons[i].classList.remove("unlockedtrue");
         }
+    }
+    for (let i = 0; i < buttons.length; i++) {
+        if (unlocked[i] == true) {
+            buttons[i].classList.add("unlocked");
+            buttons[i].classList.remove("locked");
+        } else {
+            buttons[i].classList.remove("unlocked");
+            buttons[i].classList.add("locked");
+        }
+    }
+}
+
+function updateprices() {
+    for (let i = 0; i < prices.length; i++) {
+        priceelements[i].innerText = prices[i];
     }
 }
 
@@ -145,6 +156,7 @@ function addgrassandcheck() {
     if (grass == Infinity) {
         alert("You have reached Infinity grass! You win!");
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        reset();
     } else if (grass == NaN) {
         reset();
     } checkunlocks();
@@ -163,7 +175,7 @@ getdata().then(data => {
     const fragment = document.createDocumentFragment();
     items.forEach(item => {
         const button = document.createElement("button");
-        button.classList.add('unlockedtrue' ? grass >= item.price : 'unlockedfalse');
+        button.classList.add("locked");
         button.innerHTML = `${item.name}: <br>${item.descrip} Costs <span class='price' id='${item.id}price'>${item.price}</span> grass.<span class='amountofupgrades'>Amount: <span id='${item.id}amt' style='margin-left:5px'>0</span></span>`;
         button.addEventListener("mousedown", () => buy(item.id-1));
         fragment.appendChild(button);
@@ -191,10 +203,11 @@ getdata().then(data => {
         unlocked = JSON.parse(localStorage.getItem("unlocked"));
         grasscount.innerText = grass;
         persecond.innerText = grasspersecond;
+        updateprices();
     }
 });
 
-setInterval(save, 5000);
+setInterval(save, 2500);
 function save() {
     localStorage.setItem("grass", grass);
     localStorage.setItem("grasspersecond", grasspersecond);
@@ -235,7 +248,7 @@ function exportf() {
         unlocked: unlocked
     }
     exportdata = JSON.stringify(exportdata);
-    exportdata = btoa(exportdata).slice(-2);
+    exportdata = btoa(exportdata).slice(0, -2);
     let link = document.createElement('a');
     link.download = 'grassclickerdata.txt';
     link.href = 'data:text/plain;charset=utf-8,' + exportdata;
@@ -251,7 +264,7 @@ function uploadf() {
         reader.readAsText(file, 'UTF-8');
         reader.onload = readerEvent => {
             let content = readerEvent.target.result;
-            content = atob(content) + '==';
+            content = atob(content + "==") + "}";
             content = JSON.parse(content);
             grass = content.grass;
             grasspersecond = content.grasspersecond;
