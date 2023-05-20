@@ -50,7 +50,7 @@ function buy(id) {
         } else if (id == 1) {
             grassperclick++;
         } else if (id == 2) {
-            grasspersecond += 3;
+            grasspersecond += 4;
             resetinterval();
         } else if (id == 3) {
             grasspersecond *= 1.5;
@@ -123,7 +123,7 @@ function grassclick() {
     grass = Math.round(grass);
     grasscount.innerText = grass;
     checkunlocks();
-}
+} 
 
 function checkunlocks() {
     for (let i = 0; i < prices.length; i++) {

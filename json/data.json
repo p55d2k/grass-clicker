@@ -15,7 +15,7 @@
     },
     "humanautoclicker": {
         "name": "Human's Autoclicker",
-        "descrip": "How did you get a human to help you? +3 clicks per second.",
+        "descrip": "How did you get a human to help you? +4 clicks per second.",
         "price": 250,
         "multiplier": 2.3,
         "id": 3
