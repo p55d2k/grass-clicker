@@ -115,6 +115,8 @@ function resetinterval() {
     clearInterval(previousInterval);
     if (grasspersecond != 0)
         previousInterval = setInterval(addgrassandcheck, (1 / grasspersecond) * 1000);
+    grasspersecond = Math.round(grasspersecond * 100) / 100;
+    persecond.innerText = grasspersecond;
 }
 
 function grassclick() {
